@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_dialog"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:text="Are you sure you want to exit?"
+                android:textColor="@color/black"
+                android:textSize="7pt" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_btn_bg"
+                    android:backgroundTint="#ECECEC"
+                    android:gravity="center"
+                    android:text="Exit"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_btn_bg"
+                    android:gravity="center"
+                    android:text="No"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</RelativeLayout>
